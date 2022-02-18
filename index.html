@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="index.css">
   <!-- meta tags -->
   <meta charset="utf-8">
   <title>Website</title>
@@ -35,40 +35,43 @@
       </div>
     </div>
   </nav>
-  <form>
-    <h1 class="h3 mb-3 fw-normal">Sign up!</h1>
+  <main class="form-signin">
+    <form class="needs-validation">
+      <h1 class="h3 mb-3 fw-normal">Sign up!</h1>
 
-    <div class="form-floating">
-      <input type="text" class="form-control" id="floatingName" placeholder="name">
-      <label for="floatingName">Name</label>
-    </div>
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-      <label for="floatingEmail">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="telephone" class="form-control" id="floatingNumber" placeholder="0000000000">
-      <label for="floatingNumber">Phone Numner</label>
-    </div>
-    <div class="form-floating">
-      <input type="date" class="form-control" id="floatingDateOfBirth" placeholder="00/00/0000">
-      <label for="floatingDateOfBirth">Date of Birth</label>
-    </div>
-    <div class="form-floating">
-      <select class="form-select" id="floatingGender" aria-label="Default select example">
-        <option selected>Choose an option</option>
-        <option value="1">Male</option>
-        <option value="2">Female</option>
-        <option value="3">Prefer not to respond</option>
-      </select>
-      <label for="floatingGender">Gender</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-  </form>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingName" placeholder="name" required>
+        <label for="floatingName">Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+        <label for="floatingEmail">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="telephone" class="form-control" id="floatingNumber" placeholder="0000000000" required>
+        <label for="floatingNumber">Phone Numner</label>
+      </div>
+      <div class="form-floating">
+        <input type="date" class="form-control" id="floatingDateOfBirth" placeholder="00/00/0000" required>
+        <label for="floatingDateOfBirth">Date of Birth</label>
+      </div>
+      <div class="form-floating">
+        <select class="form-select" id="floatingGender" aria-label="Default select example" required>
+          <option selected disabled value>Choose an option</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Prefer not to respond</option>
+        </select>
+        <label for="floatingGender">Gender</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+    </form>
+  </main>
+
 </body>
 
 </html>
