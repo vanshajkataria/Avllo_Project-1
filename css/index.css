@@ -29,20 +29,14 @@ body {
    line-height: 2;
  }
 
-.content{
-  align-self: center;
-}
-
 .form-floating{
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  max-width: 60%;
   padding: 15px;
   margin: auto;
 }
